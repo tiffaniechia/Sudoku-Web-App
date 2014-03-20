@@ -12,15 +12,14 @@ def random_sudoku
 end	
 
 def puzzle(sudoku)
-	#to be implemented
-	sudoku
+	sudoku.map{|x| rand > 0.4 ? 0 : x}
 end	
 
 
 get "/" do 
 	prepare_to_check_solution
 	generate_new_puzzle_if_necessary
-	@current_solution = session[:current_solution] || session[:puzzle]
+	@current_solution = session[:current_solution] 
 	@solution = session[:solution]
 	@puzzle = session[:puzzle]
 	erb :index
@@ -41,16 +40,17 @@ end
 
 
 get '/solution' do 
-	@current_solution = session[:solution]
+	@solution = @puzzle = @current_solution = session[:solution]
 	erb :index
 end	
 
 post '/' do 
-	cells= (params["cell"])
-	session[:current_solution] = cells.map{|value| value.to_i}.join
+	cells= (params["tttt"])
+	session[:current_solution] = box_order_to_row_order(cells)
 	session[:check_solution] = true
 	redirect to("/")
 end	
+
 
 def box_order_to_row_order(cells)
 	boxes = cells.each_slice(9).to_a
@@ -69,7 +69,7 @@ end
 helpers do 
 
 	def colour_class(solution_to_check, puzzle_value, current_solution_value, solution_value)
-		must_be_guessed = puzzle_value == "0"
+		must_be_guessed = puzzle_value == 0
 		tried_to_guess = current_solution_value.to_i != 0 
 		guessed_incorrectly = current_solution_value != solution_value
 
@@ -84,7 +84,7 @@ helpers do
 	end
 
 	def cell_value(value)
-		value.to_i == 0 ? '': value
+		value.to_i == 0 ? '' : value
 	end	
 
 end				
