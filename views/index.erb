@@ -4,7 +4,10 @@
       <link type="text/css" rel="stylesheet" href="/stylesheets/application.css">
   </head>   
   <body>
-    <h1>LIFE IS TOO SHORT FOR PLAYING SODUKU</h1>
+    <h1>LIFE IS TOO SHORT FOR PLAYING SODUKU, SERIOUSLY</h1>
+    <div id="flash">
+      <%= flash[:notice]%>
+    </div>
     <div id="sudoku">
       <form acion="/" method="post">
          <%3.times do |row| %>

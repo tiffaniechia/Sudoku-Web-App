@@ -1,8 +1,11 @@
 require 'sinatra'
+require 'rack-flash'
+use Rack::Flash
 require_relative './lib/sudoku'
 require_relative './lib/cell'
 
 enable :sessions
+set :session_secret, "I'm the secret key to sign the cookie"
 
 def random_sudoku
 	seed = (1..9).to_a.shuffle+Array.new(81-9,0)
@@ -35,6 +38,9 @@ end
 
 def prepare_to_check_solution
 	@check_solution = session[:check_solution]
+	if @check_solution
+		flash[:notice] = "Incorrect values in yellow. You're not very good at this, are you?"
+	end	
 	session[:check_solution] = nil
 end	
 

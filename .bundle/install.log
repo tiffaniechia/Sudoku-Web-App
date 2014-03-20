@@ -5,3 +5,10 @@ I, [2014-03-19T14:08:04.878701 #6642]  INFO -- : 0:  shotgun (0.9) from /Users/t
 I, [2014-03-19T14:08:04.879028 #6642]  INFO -- : 0:  tilt (1.4.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
 I, [2014-03-19T14:08:04.879363 #6642]  INFO -- : 0:  sinatra (1.4.4) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
 I, [2014-03-19T14:08:04.879679 #6642]  INFO -- : 0:  bundler (1.5.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
+I, [2014-03-20T19:23:55.319615 #8676]  INFO -- : 0:  rack (1.5.2) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-03-20T19:23:57.639871 #8676]  INFO -- : 0:  rack-flash3 (1.0.5) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-flash3-1.0.5.gemspec
+I, [2014-03-20T19:23:57.640626 #8676]  INFO -- : 0:  rack-protection (1.5.2) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-03-20T19:23:57.641064 #8676]  INFO -- : 0:  shotgun (0.9) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/shotgun-0.9.gemspec
+I, [2014-03-20T19:23:57.641644 #8676]  INFO -- : 0:  tilt (1.4.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-03-20T19:23:57.642081 #8676]  INFO -- : 0:  sinatra (1.4.4) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-03-20T19:23:57.642509 #8676]  INFO -- : 0:  bundler (1.5.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
