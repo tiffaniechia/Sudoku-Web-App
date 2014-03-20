@@ -1,3 +1,10 @@
+div.box 
+{
+outline-style: solid;
+outline-width: 2px;
+}
+
+
 div.box,
 div.cell
 {
@@ -36,3 +43,4 @@ body
 {
 	margin:20px;
 }
+
