@@ -28,3 +28,12 @@ I, [2014-03-21T10:37:47.914308 #9240]  INFO -- : 0:  tilt (1.4.1) from /Users/ti
 I, [2014-03-21T10:37:47.914739 #9240]  INFO -- : 0:  sinatra (1.4.4) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
 I, [2014-03-21T10:37:47.915126 #9240]  INFO -- : 0:  sinatra-partial (0.4.0) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-partial-0.4.0.gemspec
 I, [2014-03-21T10:37:47.915494 #9240]  INFO -- : 0:  bundler (1.5.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
+I, [2014-03-21T12:56:52.949539 #9540]  INFO -- : 0:  newrelic_rpm (3.7.3.204) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/newrelic_rpm-3.7.3.204.gemspec
+I, [2014-03-21T12:56:53.013110 #9540]  INFO -- : 0:  rack (1.5.2) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-1.5.2.gemspec
+I, [2014-03-21T12:56:53.013502 #9540]  INFO -- : 0:  rack-flash3 (1.0.5) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-flash3-1.0.5.gemspec
+I, [2014-03-21T12:56:53.013888 #9540]  INFO -- : 0:  rack-protection (1.5.2) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/rack-protection-1.5.2.gemspec
+I, [2014-03-21T12:56:53.014265 #9540]  INFO -- : 0:  shotgun (0.9) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/shotgun-0.9.gemspec
+I, [2014-03-21T12:56:53.014616 #9540]  INFO -- : 0:  tilt (1.4.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-03-21T12:56:53.015003 #9540]  INFO -- : 0:  sinatra (1.4.4) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-1.4.4.gemspec
+I, [2014-03-21T12:56:53.015366 #9540]  INFO -- : 0:  sinatra-partial (0.4.0) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0/specifications/sinatra-partial-0.4.0.gemspec
+I, [2014-03-21T12:56:53.015722 #9540]  INFO -- : 0:  bundler (1.5.1) from /Users/tiffanie-kyrachia/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.1.gemspec
