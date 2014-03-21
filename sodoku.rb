@@ -1,9 +1,12 @@
+require 'sinatra/partial'
 require 'sinatra'
 require 'rack-flash'
 use Rack::Flash
 require_relative './lib/sudoku'
 require_relative './lib/cell'
+require_relative './helpers/application.rb'
 
+set :partial_template_engine, :erb
 enable :sessions
 set :session_secret, "I'm the secret key to sign the cookie"
 
@@ -15,7 +18,7 @@ def random_sudoku
 end	
 
 def puzzle(sudoku)
-	sudoku.map{|x| rand > 0.4 ? 0 : x}
+	sudoku.map{|x| rand > 0.4 ? "0" : x}
 end	
 
 
@@ -39,7 +42,7 @@ end
 def prepare_to_check_solution
 	@check_solution = session[:check_solution]
 	if @check_solution
-		flash[:notice] = "Incorrect values in yellow. You're not very good at this, are you?"
+		flash[:notice] = "Incorrect values in yellow. I bet your brain feels as good as new, seeing that you've never used it."
 	end	
 	session[:check_solution] = nil
 end	
@@ -71,29 +74,6 @@ def box_order_to_row_order(cells)
 	memo += three_rows_of_three.flatten
 	}
 end	
-
-helpers do 
-
-	def colour_class(solution_to_check, puzzle_value, current_solution_value, solution_value)
-		must_be_guessed = puzzle_value == 0
-		tried_to_guess = current_solution_value.to_i != 0 
-		guessed_incorrectly = current_solution_value != solution_value
-
-		if solution_to_check &&
-			must_be_guessed &&
-			tried_to_guess &&
-			guessed_incorrectly 
-			'incorrect'
-		elsif !must_be_guessed
-			'value-provided'
-		end
-	end
-
-	def cell_value(value)
-		value.to_i == 0 ? '' : value
-	end	
-
-end				
 
 
 
