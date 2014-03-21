@@ -1,3 +1,3 @@
 #Week 4 Project: Sodoku Web App
 
-This website will allow us to play sudoku in the browser. 
+The web app is availble <a href="exasperated-sudoku.herokuapp.com">here </a>
