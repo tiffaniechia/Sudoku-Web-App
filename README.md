@@ -17,3 +17,8 @@ The app is availble on Heroku, you can play the game [here](http://exasperated-s
 - Ruby
 - Sinatra
 - Heroku
+
+##Moving forward: 
+It would be great to implement a feature whereby users are able to select the level of difficulty they want. 
+
+A button to view the full solution would be desirable as well. 
