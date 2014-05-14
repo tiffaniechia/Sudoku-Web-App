@@ -4,9 +4,10 @@ The goal of this app is to practice working with Sinatra and Heroku. The app is 
 
 New Relic was used to record traffic on the site. 
 
-The app is availble on Heroku, you can play the game [here](http://exasperated-sudoku.herokuapp.com/)
-
 This task was set by [Evengy Shadchnev](https://github.com/shadchnev)
+
+###The app is availble on Heroku, you can play the game [here](http://exasperated-sudoku.herokuapp.com/)
+
 
 ## 
 
