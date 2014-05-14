@@ -16,21 +16,21 @@ def random_sudoku
 	sudoku = Sudoku.new(seed.join)
 	sudoku.solve!
 	sudoku.to_s.chars
-end	
+end
 
 def puzzle(sudoku)
 	sudoku.map{|x| rand > 0.4 ? "0" : x}
-end	
+end
 
 
-get "/" do 
+get "/" do
 	prepare_to_check_solution
 	generate_new_puzzle_if_necessary
-	@current_solution = session[:current_solution] 
+	@current_solution = session[:current_solution]
 	@solution = session[:solution]
 	@puzzle = session[:puzzle]
 	erb :index
-end	
+end
 
 def generate_new_puzzle_if_necessary
 	return if session[:current_solution]
@@ -38,28 +38,28 @@ def generate_new_puzzle_if_necessary
 	session[:solution] = sudoku
 	session[:puzzle] = puzzle(sudoku)
 	session[:current_solution] = session[:puzzle]
-end	
+end
 
 def prepare_to_check_solution
 	@check_solution = session[:check_solution]
 	if @check_solution
-		flash[:notice] = "Incorrect values in yellow. I bet your brain feels as good as new, seeing that you've never used it."
-	end	
+		flash[:notice] = "Incorrect values in yellow!"
+	end
 	session[:check_solution] = nil
-end	
+end
 
 
-get '/solution' do 
+get '/solution' do
 	@solution = @puzzle = @current_solution = session[:solution]
 	erb :index
-end	
+end
 
-post '/' do 
+post '/' do
 	cells= (params["tttt"])
 	session[:current_solution] = box_order_to_row_order(cells)
 	session[:check_solution] = true
 	redirect to("/")
-end	
+end
 
 
 def box_order_to_row_order(cells)
@@ -67,18 +67,11 @@ def box_order_to_row_order(cells)
 	(0..8).to_a.inject([]) {|memo, i|
 	first_box_index = i / 3*3
 	three_boxes = boxes[first_box_index, 3]
-	three_rows_of_three = three_boxes.map do |box| 	
-		row_number_in_a_box = i % 3 
+	three_rows_of_three = three_boxes.map do |box|
+		row_number_in_a_box = i % 3
 		first_box_in_the_row_index = row_number_in_a_box * 3
 		box[first_box_in_the_row_index, 3]
 	end
 	memo += three_rows_of_three.flatten
 	}
-end	
-
-
-
-
-
-
-
+end
