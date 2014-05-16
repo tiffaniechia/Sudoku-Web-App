@@ -4,19 +4,20 @@ The goal of this app is to practice working with Sinatra and Heroku. The app is 
 
 New Relic was used to record traffic on the site. 
 
-This task was set by [Evengy Shadchnev](https://github.com/shadchnev)
+This task was set by [Evengy Shadchnev](https://github.com/shadchnev). 
 
-###The app is availble on Heroku, you can play the game [here](http://exasperated-sudoku.herokuapp.com/)
+(Week 5)
 
+###The app is availble on Heroku, you can play the game [here](http://exasperated-sudoku.herokuapp.com/).
 
-## 
+##  
 
 ###Home page
 ![screenshot](public/images/home.png)
 ###Solver in action!
 ![screenshot](public/images/solver.png)
 
-##Stack:
+##Technologies Used
 - Ruby
 - Sinatra
 - Heroku
@@ -24,7 +25,7 @@ This task was set by [Evengy Shadchnev](https://github.com/shadchnev)
 - HTML
 - CSS
 
-##Moving forward: 
+##Moving forward 
 It would be great to implement a feature whereby users are able to select the level of difficulty they want. 
 
 A button to view the full solution would be desirable as well. 
