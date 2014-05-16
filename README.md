@@ -10,7 +10,7 @@ This task was set by [Evengy Shadchnev](https://github.com/shadchnev).
 
 ###The app is availble on Heroku, you can play the game [here](http://exasperated-sudoku.herokuapp.com/).
 
-##  
+##   
 
 ###Home page
 ![screenshot](public/images/home.png)
